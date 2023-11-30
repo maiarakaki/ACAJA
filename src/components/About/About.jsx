@@ -5,8 +5,8 @@ export default function About(){
     return (
         <>
             <div className="about-banner pt-5 container-fluid bg-light" id='about-us'>
-                <div className='container h-100'>
-                    <div className="row align-items-center h-75">
+                <div className='container'>
+                    <div className="row align-items-center">
                         <div className='col-12 col-md-6'>
                             <h1>Sobre ACAJA</h1>
                             <p>

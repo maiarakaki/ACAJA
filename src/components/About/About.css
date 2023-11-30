@@ -1,5 +1,5 @@
 .about-banner{
-    height:60vh;
+    height:80vh;
     
 }
 
@@ -14,11 +14,24 @@
         height: 300px;
         background-position-y: 70%;
     }
+
 }
 
 @media Screen and (max-width:767px) {
     #about-img-container{
         height: 200px;
+        background-position-y: 73%;
+    }
+
+    .about-banner{
+        height:90vh;
+        
+    }
+}
+
+@media Screen and (max-width:340px) {
+    #about-img-container{
+        height: 100px;
         background-position-y: 73%;
     }
 }
