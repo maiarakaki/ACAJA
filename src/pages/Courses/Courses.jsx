@@ -17,7 +17,7 @@ export default function Courses(){
         ],
         pricing:"$5.000/mes",
         background:childrenCourseImg,
-        imgOrder:2
+        invertOrder:true
     };
 
 
