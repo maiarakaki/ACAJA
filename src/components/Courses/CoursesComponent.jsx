@@ -2,6 +2,7 @@ import React from 'react';
 import onlineCourse from '../../images/online.jpeg'
 import kidsCourse from '../../images/ninios.jpeg'
 import teensCourse from '../../images/adolescentes.jpeg'
+import { HashLink } from 'react-router-hash-link';
 import './CoursesComponent.css'
 
 export default function CoursesComponent(){
@@ -15,13 +16,19 @@ export default function CoursesComponent(){
                     </div>
                     <div className='row align-items-center imgs-container'>
                         <div className='col-12 col-lg-4 mb-3'>
-                            <img className="course-img" src={onlineCourse} alt="" />
+                            <HashLink smooth to='/courses#online-course'>
+                                <img className="course-img" src={onlineCourse} alt="" />
+                            </HashLink>
                         </div>
                         <div className='col-12 col-lg-4 mb-3'>
-                            <img className="course-img" src={kidsCourse} alt="" />
+                            <HashLink smooth to='/courses#children-course'>
+                                <img className="course-img" src={kidsCourse} alt="" />
+                            </HashLink>
                         </div>
                         <div className='col-12 col-lg-4 mb-3'>
-                            <img className="course-img" src={teensCourse} alt="" />
+                            <HashLink smooth to='/courses#teen-course'>
+                                <img className="course-img" src={teensCourse} alt="" />
+                            </HashLink>
                         </div>
                     </div>
 
