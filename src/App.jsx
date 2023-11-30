@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import ContactForm from './components/ContactForm/ContactForm';
 import Landing from './pages/Landing';
@@ -17,6 +17,10 @@ function App() {
   const handleLgShow = (show) => {
     setLgShow(show);
   };
+
+  useEffect(() => {
+    setLgShow(true);
+  }, []);
 
   return (
 
