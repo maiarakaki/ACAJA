@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import './Courses.css'
 import TopBanner from "./TopBanner";
-import img from "./pexels-kanji.jpg";
+import img from "../../images/pexels-kanji.jpg";
 
 export default function Courses(){
     const bannerElements={
