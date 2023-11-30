@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Shippori+Antique&display=swap');
+
+
+.hero-banner{
+    background-image: url('../../images/Fuji+Pagoda.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    background-position-y: 15%;
+}
+
+#call-to-action{
+    background-color: rgb(0,0,0,0.5);
+}
+
+#info-btn{
+    background-color: #F83C47;
+    border:#F83C47;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
