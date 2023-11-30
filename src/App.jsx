@@ -1,13 +1,27 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import ContactForm from './components/ContactForm/ContactForm';
+import Landing from './Landing';
+import './App.css';
 
 
 function App() {
   return (
 
-      <ContactForm />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} /> 
+      </Routes>
+    </BrowserRouter>
 
+  );
+}
+
+function Home(){
+  return(
+    <div>
+      <Landing />
+    </div>
   );
 }
 
