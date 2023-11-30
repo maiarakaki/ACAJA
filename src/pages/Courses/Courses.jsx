@@ -5,6 +5,7 @@ import img from "../../images/pexels-kanji.jpg";
 import CourseContent from "../../components/Courses/CourseContent";
 import childrenCourseImg from "../../images/aula.jpeg";
 import teenCourseImg from "../../images/adolescentes-grupo.jpeg"
+import onlineCourseImg from "../../images/pexels-annushka-ahuja-8055848.jpg"
 
 export default function Courses(){
     const childrenContent={
@@ -35,6 +36,18 @@ export default function Courses(){
         invertOrder:true
     };
 
+    const onlineContent={
+        id:"online-course",
+        title:"Cursos Online",
+        description:"Ofrecemos cursos online grupales e individuales que se ajustan a las necesidades y objetivos del interesado.",
+        schedule:[
+            {day: "dias y horarios", time:"a convenir"}
+        ],
+        pricing:"$7.000/mes",
+        background:onlineCourseImg,
+        invertOrder:false
+    };
+
     const bannerElements={
         title:"Nuestros Cursos", 
         abstract:"Ofrecemos cursos para todas las edades y niveles",
@@ -47,6 +60,7 @@ export default function Courses(){
             <TopBanner bannerElements={bannerElements} />
             <CourseContent contentData={childrenContent}/>
             <CourseContent contentData={teenContent}/>
+            <CourseContent contentData={onlineContent}/>
         </>
     );
 }
