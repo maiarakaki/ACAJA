@@ -3,6 +3,14 @@ import './Courses.css'
 import TopBanner from "../../components/TopBanner/TopBanner";
 import img from "../../images/pexels-kanji.jpg";
 
+function Children(){
+    return(
+        <div id="children-courses">
+            lalala
+        </div>
+    );
+}
+
 export default function Courses(){
     const bannerElements={
         title:"Nuestros Cursos", 
@@ -14,6 +22,7 @@ export default function Courses(){
     return (
         <>
             <TopBanner bannerElements={bannerElements} />
+            <Children />
         </>
     );
 }
