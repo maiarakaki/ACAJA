@@ -1,19 +1,19 @@
 import React, {useState} from "react";
 import './Courses.css'
 import TopBanner from "./TopBanner";
+import img from "./pexels-kanji.jpg";
 
 export default function Courses(){
     const bannerElements={
         title:"Nuestros Cursos", 
         abstract:"Ofrecemos cursos para todas las edades y niveles",
-        image: "./pexels-kanji.jpg"
+        image: img,
+        position:40
     };
 
     return (
         <>
-            <div className="container-fluid">
-                <TopBanner bannerElements={bannerElements} />
-            </div>
+            <TopBanner bannerElements={bannerElements} />
         </>
     );
 }

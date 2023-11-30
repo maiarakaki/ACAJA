@@ -1,0 +1,29 @@
+.top-banner{
+    height:30vh;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-size: cover;
+}
+
+.page-title-container{
+    margin: 0;
+}
+
+@media Screen and (max-width:767px){
+    .top-banner{
+        padding:0;
+    }
+    .page-title-container{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .top-banner{
+        justify-content: left;
+    }
+    .page-title-container{
+        width:40%;
+    }
+}
