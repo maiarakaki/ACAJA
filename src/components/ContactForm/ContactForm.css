@@ -1,0 +1,28 @@
+#contact-us{
+    background-color: #683883;
+    color:var(--higlight-color);
+  }
+  
+  #from_name, 
+  #reply_to,
+  #message {
+    width: 100%;
+  }
+  
+  .contact-info-container{
+    background-color: #3D1A40;
+    color:white;
+  }
+  
+  #contact-info{
+    font-size: 0.9em;
+  }
+  
+  #contact-info>a{
+    color:var(--higlight-color);
+    text-decoration: none;
+  }
+  
+  #contact-info>a:hover{
+    font-size: large;
+  }
