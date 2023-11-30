@@ -6,12 +6,14 @@ import Courses from './pages/Courses/Courses';
 import Events from './pages/Events';
 import FAQs from './pages/FAQs';
 import './App.css';
+import SiteNavbar from './components/Navbar/SiteNavbar';
 
 
 function App() {
   return (
 
     <BrowserRouter>
+      <SiteNavbar />
       <Routes>
         <Route path="/" element={<Home />} /> 
         <Route path="/courses" element={<Courses />} /> 
