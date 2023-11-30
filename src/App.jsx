@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import ContactForm from './components/ContactForm/ContactForm';
-import Landing from './Landing';
+import Landing from './pages/Landing';
 import './App.css';
 
 
