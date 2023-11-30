@@ -1,0 +1,10 @@
+.about-banner{
+    height:60vh;
+    
+}
+
+#about-img-container{
+    background-image: url('../../images/undoukai.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
