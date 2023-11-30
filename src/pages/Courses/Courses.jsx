@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import './Courses.css'
 import TopBanner from "../../components/TopBanner/TopBanner";
 import img from "../../images/pexels-kanji.jpg";
-import CourseContent from "../../components/Courses/CourseContent";
+import CourseContent from "../../components/CoursePageBuilder/CourseContent";
 import childrenCourseImg from "../../images/aula.jpeg";
 import teenCourseImg from "../../images/adolescentes-grupo.jpeg"
 import onlineCourseImg from "../../images/pexels-annushka-ahuja-8055848.jpg"
