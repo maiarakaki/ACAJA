@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import ContactForm from './components/ContactForm/ContactForm';
 import Landing from './pages/Landing';
+import Courses from './pages/Courses';
 import './App.css';
 
 
@@ -11,6 +12,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} /> 
+        <Route path="/courses" element={<Courses />} /> 
       </Routes>
     </BrowserRouter>
 
