@@ -6,6 +6,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+import { HashLink } from 'react-router-hash-link';
+import { NavDropdown } from "react-bootstrap";
+
+
 export default function SiteNavbar(){
     const [iconColor] = useState("black");
     return(
@@ -18,11 +22,38 @@ export default function SiteNavbar(){
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#about-us">Sobre Nosotros</Nav.Link>
-                        <Nav.Link href="#cursos">Cursos</Nav.Link>
-                        <Nav.Link href="#eventos">Eventos</Nav.Link>
-                        <Nav.Link href="#faqs">FAQs</Nav.Link>
-                        <Nav.Link href="#contacto">Contacto</Nav.Link>
+                            <HashLink className="nav-link" smooth to='/#about-us'>
+                                Sobre Nosotros
+                            </HashLink>
+                            <NavDropdown title="Cursos" id="courses-dropdown">
+                                <NavDropdown.Item>
+                                    <HashLink className="nav-link" smooth to='/courses#children-course'>
+                                        Niños
+                                    </HashLink>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <HashLink className="nav-link" smooth to='/courses#teen-course'>
+                                        Adolescentes
+                                    </HashLink>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <HashLink className="nav-link" smooth to='/courses#online-course'>
+                                        Online
+                                    </HashLink>
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider/>
+                                <NavDropdown.Item>
+                                    <HashLink className="nav-link" smooth to='/#courses-section'>
+                                        Todos
+                                    </HashLink>
+                                </NavDropdown.Item>
+                            </NavDropdown>
+                            <HashLink className="nav-link" smooth to='/#courses-section'>
+                                Cursos
+                            </HashLink>
+                            <HashLink className="nav-link" smooth to='/#contact-us'>
+                                Contacto
+                            </HashLink>
                     </Nav>
                     <Nav>
                         <SocialMedia iconColor={iconColor}/>
