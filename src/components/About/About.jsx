@@ -6,7 +6,7 @@ export default function About(){
         <>
             <div className="about-banner pt-5 container-fluid bg-light" id='about-us'>
                 <div className='container h-100'>
-                    <div className="row">
+                    <div className="row align-items-center h-75">
                         <div className='col-12 col-md-6'>
                             <h1>Sobre ACAJA</h1>
                             <p>
@@ -17,8 +17,9 @@ export default function About(){
                                 japonesa como a la comunidad toda.
                             </p>
                         </div>
-                        <div className='col' id="about-img-container">
-                            lalalala
+                        <div className='col'>
+                            <div id="about-img-container">
+                            </div>
                         </div>
                     </div>
                 </div>
