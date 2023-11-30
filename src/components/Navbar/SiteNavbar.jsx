@@ -48,9 +48,6 @@ export default function SiteNavbar(){
                                     </HashLink>
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <HashLink className="nav-link" smooth to='/#courses-section'>
-                                Cursos
-                            </HashLink>
                             <HashLink className="nav-link" smooth to='/#contact-us'>
                                 Contacto
                             </HashLink>
