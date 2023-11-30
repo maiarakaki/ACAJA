@@ -6,6 +6,7 @@
     background-size:cover;
     background-repeat: no-repeat;
     height: 60vh;
+    background-position-y: 15%;
 }
 
 #call-to-action{
