@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import ContactForm from './components/ContactForm/ContactForm';
 import Landing from './pages/Landing';
-import Courses from './pages/Courses';
+import Courses from './pages/Courses/Courses';
 import Events from './pages/Events';
 import FAQs from './pages/FAQs';
 import './App.css';

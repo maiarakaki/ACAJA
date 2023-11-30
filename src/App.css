@@ -8,7 +8,12 @@ body{
   font-family: 'Shippori Antique', sans-serif;
 }
 
-h1{
+h1,h2{
   font-family: 'Abhaya Libre', serif;
-  font-weight:800;
+  font-weight: bold;
 }
+
+h1{
+    font-weight:800;
+}
+    
