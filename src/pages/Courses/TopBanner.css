@@ -1,3 +1,21 @@
+@keyframes slideV {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(10%);
+    }
+  }
+
+  @keyframes slideH {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(10%);
+    }
+  }
+
 .top-banner{
     height:30vh;
     display:flex;
@@ -16,6 +34,8 @@
     }
     .page-title-container{
         text-align: center;
+        animation: slideV 1s ease-in-out;
+        position: fixed;
     }
 }
 
@@ -25,5 +45,7 @@
     }
     .page-title-container{
         width:40%;
+        animation: slideH 1s ease-in-out;
+
     }
 }
