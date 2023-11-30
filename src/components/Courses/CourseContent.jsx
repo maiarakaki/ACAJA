@@ -9,16 +9,16 @@ export default function CourseContent({contentData}){
         <>
             <div id={contentData.id} className='container'>
                 <div className='row container'>
-                    <h1>{contentData.title}</h1>
+                    <h2>{contentData.title}</h2>
                     <div className='row'>
                         <div className='col-12 col-md-6' id='course-info'>
                             <div className='row'>
-                                <h3>Acerca de este curso:</h3>
+                                <h4>Acerca de este curso:</h4>
                                 <p>{contentData.description}</p>
                             </div>
 
                             <div className='row'>
-                                <h3>Horarios:</h3>
+                                <h4>Horarios:</h4>
                                     <p>
                                         {contentData.schedule.map((item, index) => (
                                             <span key={index}>
@@ -30,7 +30,7 @@ export default function CourseContent({contentData}){
                             </div>
 
                             <div className='row'>
-                                <h3>Aranceles:</h3>
+                                <h4>Aranceles:</h4>
                                 <p>{contentData.pricing}</p>
                             </div>
                         </div>
