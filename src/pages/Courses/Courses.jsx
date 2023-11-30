@@ -3,7 +3,8 @@ import './Courses.css'
 import TopBanner from "../../components/TopBanner/TopBanner";
 import img from "../../images/pexels-kanji.jpg";
 import CourseContent from "../../components/Courses/CourseContent";
-import childrenCourseImg from "../../images/pexels-kanji.jpg";
+import childrenCourseImg from "../../images/aula.jpeg";
+import teenCourseImg from "../../images/adolescentes-grupo.jpeg"
 
 export default function Courses(){
     const childrenContent={
@@ -17,9 +18,22 @@ export default function Courses(){
         ],
         pricing:"$5.000/mes",
         background:childrenCourseImg,
-        invertOrder:true
+        invertOrder:false
     };
 
+    const teenContent={
+        id:"teen-course",
+        title:"Curso presencial para adolescentes",
+        description:"En este curso presencial para niños entre 13 y 15 años los alumnos comienzan a prepararse para rendir los JLPT, examenes internacionales de proficiencia en lengua japonesa.",
+        schedule:[
+            {day: "lunes", time:"10-14"},
+            {day: "martes", time:"10-14"},
+            {day: "miércoles", time:"10-14"},
+        ],
+        pricing:"$5.000/mes",
+        background:teenCourseImg,
+        invertOrder:true
+    };
 
     const bannerElements={
         title:"Nuestros Cursos", 
@@ -32,6 +46,7 @@ export default function Courses(){
         <>
             <TopBanner bannerElements={bannerElements} />
             <CourseContent contentData={childrenContent}/>
+            <CourseContent contentData={teenContent}/>
         </>
     );
 }

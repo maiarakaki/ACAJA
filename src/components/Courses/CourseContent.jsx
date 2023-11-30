@@ -35,7 +35,7 @@ export default function CourseContent({contentData}){
                             </div>
                         </div>
 
-                        <div className={`col ${contentData.invertOrder ? "order-first" : "order-last"}`}>   
+                        <div className={`col ${contentData.invertOrder ? "order-lg-first" : "order-lg-last"}`}>   
                             <div className='img-container'
                                 style={{backgroundImage:`url(${contentData.background})`
                                 }}>
