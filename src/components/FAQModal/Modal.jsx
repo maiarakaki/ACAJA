@@ -1,7 +1,10 @@
 import Modal from 'react-bootstrap/Modal';
 import './ModalStyle.css';
+import { Link } from 'react-router-dom';
 
 function ModalFAQs(props) {
+
+  const handleClose = () => props.onHide();
 
   return (
     
@@ -34,7 +37,10 @@ function ModalFAQs(props) {
                 Las inscripciones al JLPT N7-N6 se encuentran cerradas.
               </p>
             </div>
-
+            <Link to="/faqs">
+              <button className='btn btn-primary'
+                onClick={handleClose}>ver más</button>
+            </Link>
           </div>
         </Modal.Body>
       </Modal>

@@ -3,8 +3,6 @@ import './CourseContent.css'
 
 export default function CourseContent({contentData}){
 
-
-
     return (
         <>
             <div id={contentData.id} className={`py-5 container-fluid ${contentData.invertOrder ? "bg-white" : "bg-light"}`}>
