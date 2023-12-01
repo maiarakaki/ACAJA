@@ -7,6 +7,7 @@ import FAQs from './pages/FAQs';
 import './App.css';
 import SiteNavbar from './components/Navbar/SiteNavbar';
 import ModalFAQs from './components/FAQModal/Modal';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path="/faqs" element={<FAQs />} /> 
         <Route path="*" element={<NotFound />} /> 
       </Routes>
+      <Footer />
     </BrowserRouter>
 
   );
