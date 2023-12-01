@@ -10,8 +10,8 @@ export default function TopBanner({bannerElements}){
             >
             <div className="container">
                 <div className="container-fluid page-title-container p-lg-2"
-                style={{color:"white",
-                        backgroundColor:"rgb(0,0,0,0.5)"}}
+                tyle={{color:"white",
+                  s      backgroundColor:"rgb(0,0,0,0.5)"}}
                 >
                     <h1>{bannerElements.title}</h1>
                     <h6>{bannerElements.abstract}</h6>
