@@ -1,19 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import ContactForm from './components/ContactForm/ContactForm';
 import Landing from './pages/Landing';
 import Courses from './pages/Courses/Courses';
 import Events from './pages/Events';
 import FAQs from './pages/FAQs';
 import './App.css';
 import SiteNavbar from './components/Navbar/SiteNavbar';
+import ModalFAQs from './components/FAQModal/Modal';
 
 
 function App() {
+
+  const [lgShow, setLgShow] = useState(false);
+
+  const handleLgShow = (show) => {
+    setLgShow(show);
+  };
+
+  useEffect(() => {
+    setLgShow(true);
+  }, []);
+
   return (
 
     <BrowserRouter>
-      <SiteNavbar />
+      <SiteNavbar onClick={handleLgShow}/>
+      <ModalFAQs  show={lgShow}
+        onHide={() => handleLgShow(false)}/>
       <Routes>
         <Route path="/" element={<Home />} /> 
         <Route path="/courses" element={<Courses />} /> 

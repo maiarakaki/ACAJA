@@ -9,9 +9,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import { HashLink } from 'react-router-hash-link';
 import { NavDropdown } from "react-bootstrap";
 
-
-export default function SiteNavbar(){
+export default function SiteNavbar(props){
     const [iconColor] = useState("black");
+    const handleClick = () => {
+        props.onClick(true);
+      };
+    
+
+
     return(
         <>
             <Navbar collapseOnSelect expand="lg" id="navbar">
@@ -51,6 +56,10 @@ export default function SiteNavbar(){
                             <HashLink className="nav-link" smooth to='/#contact-us'>
                                 Contacto
                             </HashLink>
+
+                            <Nav.Link className="nav-link" onClick={handleClick}>
+                                FAQs
+                            </Nav.Link>
                     </Nav>
                     <Nav>
                         <SocialMedia iconColor={iconColor}/>

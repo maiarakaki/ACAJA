@@ -3,8 +3,6 @@ import './TopBanner.css';
 
 
 export default function TopBanner({bannerElements}){
-    console.log(bannerElements);
-
     return (
         <div className="container-fluid top-banner" 
             style={{backgroundImage:`url(${bannerElements.image})`,
