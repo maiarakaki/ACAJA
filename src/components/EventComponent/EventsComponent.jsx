@@ -52,7 +52,7 @@ function CarrouselGallery(){
 export default function EventsHome(){
     return(
         <>
-            <div className="container-fluid events-container" id="events-section">
+            <div className="container-fluid events-container p-3 my-3" id="events-section">
                 <div className="container">
                     <div className="row">
                         <h1>Novedades y eventos</h1>
@@ -65,10 +65,13 @@ export default function EventsHome(){
                                 <CarrouselGallery />
                         </div>
                     </div>
-                    <div className="row container-fluid justify-content-center">
-                        <Link to='/events'>
-                            <button className="btn btn-primary">ver más</button>
-                        </Link>
+                    <div className="row mt-3 ">
+                        <div className="container col-2">
+                            <Link to='/events'>
+                                <button className="btn btn-primary">ver más</button>
+                            </Link>
+
+                        </div>
                     </div>
                 </div>
             </div>
