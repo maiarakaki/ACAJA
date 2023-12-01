@@ -8,6 +8,7 @@ import './App.css';
 import SiteNavbar from './components/Navbar/SiteNavbar';
 import ModalFAQs from './components/FAQModal/Modal';
 import Footer from './components/Footer/Footer';
+import NotFound from './components/NotFound/NotFound';
 
 
 function App() {
@@ -41,13 +42,6 @@ function App() {
   );
 }
 
-function NotFound() {
-  return (
-    <div>
-      <h2>404</h2>
-    </div>
-  );
-}
 
 function Home(){
   return(
