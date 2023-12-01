@@ -53,6 +53,9 @@ export default function SiteNavbar(props){
                                     </HashLink>
                                 </NavDropdown.Item>
                             </NavDropdown>
+                            <HashLink className="nav-link" smooth to='/#events-section'>
+                                Eventos
+                            </HashLink>
                             <HashLink className="nav-link" smooth to='/#contact-us'>
                                 Contacto
                             </HashLink>
