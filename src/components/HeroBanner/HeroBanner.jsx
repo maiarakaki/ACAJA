@@ -9,7 +9,7 @@ export default function HeroBanner(){
                 <div className="container h-100 d-flex align-items-center" >
                     <div className="row"></div>
                     <div className="row">
-                        <div className="col-6">
+                        <div className="col-10 col-md-8">
                             <div className='row p-3' id="call-to-action">
                                 <div className="col-12">
                                     <h1 style={{color:"white"}}>Aprendé sobre Japón y su cultura con nosotros</h1>

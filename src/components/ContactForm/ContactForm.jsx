@@ -5,7 +5,7 @@ import './ContactForm.css'
 
 
 export default function ContactForm () {
-    const [iconColor, setIconColor] = useState("ffffff");
+    const [iconColor] = useState("ffffff");
     const form = useRef();
     const handleSubmit = (e) =>{
         e.preventDefault();
@@ -26,7 +26,7 @@ export default function ContactForm () {
     };
 
     return (
-        <div className="container-fluid" id="contact-us">
+        <div className="container-fluid py-3" id="contact-us">
             <div className='container'>
                 <div className="row">
                     <h1>Contactanos</h1>

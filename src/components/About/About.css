@@ -1,6 +1,5 @@
 .about-banner{
-    height:80vh;
-    
+    height:30vh;
 }
 
 #about-img-container{
@@ -9,10 +8,25 @@
     background-repeat: no-repeat;
 }
 
+@media Screen and (min-width:992px) {
+    @media Screen and (min-width:768px) {
+        #about-img-container{
+            height: 250px;
+            background-position-y: 70%;
+        }
+    
+    }
+
+}
+
 @media Screen and (min-width:768px) {
     #about-img-container{
         height: 300px;
         background-position-y: 70%;
+    }
+
+    .about-banner{
+        height: 40vh;
     }
 
 }
@@ -24,14 +38,19 @@
     }
 
     .about-banner{
-        height:90vh;
+        height:60vh;
         
     }
 }
 
-@media Screen and (max-width:340px) {
+@media Screen and (max-width:576px) {
     #about-img-container{
-        height: 100px;
+        height: 150px;
         background-position-y: 73%;
     }
+
+    #about-us{
+        overflow: hidden;
+    }
+
 }
