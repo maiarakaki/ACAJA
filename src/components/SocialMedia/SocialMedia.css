@@ -4,3 +4,9 @@
     font-size:2.1em !important;
   
 }
+
+@media Screen and (max-width:991px){
+    .navbar-nav>#social-media-icons{
+        width:20%;
+    }
+}
