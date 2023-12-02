@@ -31,6 +31,7 @@ function App() {
         onHide={() => handleLgShow(false)}/>
       <Routes>
         <Route path="/" element={<Home />} /> 
+        <Route path="/ACAJA" element={<Home />} /> 
         <Route path="/courses" element={<Courses />} /> 
         <Route path="/events" element={<Events />} /> 
         <Route path="/faqs" element={<FAQs />} /> 
