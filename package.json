@@ -2,7 +2,6 @@
   "name": "codespaces-react",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://maiarakaki.github.io/ACAJA/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@fortawesome/free-brands-svg-icons": "^6.5.0",
@@ -27,9 +26,7 @@
     "start": "BROWSER=none WDS_SOCKET_PORT=0 vite --port 3000",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "test": "vitest"
   },
   "eslintConfig": {
     "extends": [
