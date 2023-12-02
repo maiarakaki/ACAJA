@@ -16,17 +16,17 @@ export default function CoursesComponent(){
                     </div>
                     <div className='row align-items-center imgs-container'>
                         <div className='col-12 col-lg-4 mb-3'>
-                            <HashLink smooth to='/courses#online-course'>
+                            <HashLink smooth to='/ACAJA/courses#online-course'>
                                 <img className="course-img" src={onlineCourse} alt="" />
                             </HashLink>
                         </div>
                         <div className='col-12 col-lg-4 mb-3'>
-                            <HashLink smooth to='/courses#children-course'>
+                            <HashLink smooth to='/ACAJA/courses#children-course'>
                                 <img className="course-img" src={kidsCourse} alt="" />
                             </HashLink>
                         </div>
                         <div className='col-12 col-lg-4 mb-3'>
-                            <HashLink smooth to='/courses#teen-course'>
+                            <HashLink smooth to='/ACAJA/courses#teen-course'>
                                 <img className="course-img" src={teensCourse} alt="" />
                             </HashLink>
                         </div>

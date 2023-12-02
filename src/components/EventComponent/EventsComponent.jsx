@@ -67,7 +67,7 @@ export default function EventsHome(){
                     </div>
                     <div className="row mt-3 ">
                         <div className="container col-2">
-                            <Link to='/events'>
+                            <Link to='/ACAJA/events'>
                                 <button className="btn btn-primary">ver más</button>
                             </Link>
 
