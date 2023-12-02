@@ -15,7 +15,7 @@ export default function HeroBanner(){
                                     <h1 style={{color:"white"}}>Aprendé sobre Japón y su cultura con nosotros</h1>
                                 </div>
                                 <div className="col-12">
-                                <Link to="/courses">
+                                <Link to="/ACAJA/courses">
                                     <button className="btn btn-primary" id="info-btn"> Más Info</button>
                                 </Link>
                                 </div>
