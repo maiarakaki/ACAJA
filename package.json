@@ -1,6 +1,7 @@
 {
   "name": "codespaces-react",
   "version": "0.1.0",
+  "homepage":"https://maiarakaki.github.io/ACAJA",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -23,6 +24,8 @@
     "postcss": "^8.4.31"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "BROWSER=none WDS_SOCKET_PORT=0 vite --port 3000",
     "build": "vite build",
     "preview": "vite preview",
