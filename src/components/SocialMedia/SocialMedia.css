@@ -1,5 +1,6 @@
 
-.social-media-icon-container>a:hover{
-    color:#FEC612;
+.social-media-icon:hover{
+    color:#FEC612 !important;
+    font-size:2.1em !important;
   
 }
