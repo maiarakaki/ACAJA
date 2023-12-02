@@ -31,9 +31,10 @@ function App() {
         onHide={() => handleLgShow(false)}/>
       <Routes>
         <Route path="/" element={<Home />} /> 
-        <Route path="/courses" element={<Courses />} /> 
-        <Route path="/events" element={<Events />} /> 
-        <Route path="/faqs" element={<FAQs />} /> 
+        <Route path="/ACAJA/" element={<Home />} /> 
+        <Route path="/ACAJA/courses" element={<Courses />} /> 
+        <Route path="/ACAJA/events" element={<Events />} /> 
+        <Route path="/ACAJA/faqs" element={<FAQs />} /> 
         <Route path="*" element={<NotFound />} /> 
       </Routes>
       <Footer />

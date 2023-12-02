@@ -37,7 +37,7 @@ function ModalFAQs(props) {
                 Las inscripciones al JLPT N7-N6 se encuentran cerradas.
               </p>
             </div>
-            <Link to="/faqs">
+            <Link to="/ACAJA/faqs">
               <button className='btn btn-primary'
                 onClick={handleClose}>ver más</button>
             </Link>

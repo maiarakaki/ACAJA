@@ -21,42 +21,42 @@ export default function SiteNavbar(props){
         <>
             <Navbar collapseOnSelect expand="lg" id="navbar">
                 <Container>
-                    <Navbar.Brand href="/">
+                    <Navbar.Brand href="/ACAJA/">
                         <img src={logo} width={80}/> ACAJA
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                            <HashLink className="nav-link" smooth to='/#about-us'>
+                            <HashLink className="nav-link" smooth to='/ACAJA/#about-us'>
                                 Sobre Nosotros
                             </HashLink>
                             <NavDropdown title="Cursos" id="courses-dropdown">
                                 <NavDropdown.Item>
-                                    <HashLink className="nav-link" smooth to='/courses#children-course'>
+                                    <HashLink className="nav-link" smooth to='/ACAJA/courses#children-course'>
                                         Niños
                                     </HashLink>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <HashLink className="nav-link" smooth to='/courses#teen-course'>
+                                    <HashLink className="nav-link" smooth to='/ACAJA/courses#teen-course'>
                                         Adolescentes
                                     </HashLink>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <HashLink className="nav-link" smooth to='/courses#online-course'>
+                                    <HashLink className="nav-link" smooth to='/ACAJA/courses#online-course'>
                                         Online
                                     </HashLink>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider/>
                                 <NavDropdown.Item>
-                                    <HashLink className="nav-link" smooth to='/#courses-section'>
+                                    <HashLink className="nav-link" smooth to='/ACAJA#courses-section'>
                                         Todos
                                     </HashLink>
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <HashLink className="nav-link" smooth to='/#events-section'>
+                            <HashLink className="nav-link" smooth to='/ACAJA#events-section'>
                                 Eventos
                             </HashLink>
-                            <HashLink className="nav-link" smooth to='/#contact-us'>
+                            <HashLink className="nav-link" smooth to='/ACAJA#contact-us'>
                                 Contacto
                             </HashLink>
 
